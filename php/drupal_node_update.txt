@@ -1,0 +1,22 @@
+<?php
+// Batch update nodes in Drupal
+
+// To be pasted on a block or PHP text block
+
+$sql = 'SELECT n.nid FROM {node} AS n WHERE n.type = :type AND n.nid < 1100 AND n.nid >= 1000';
+
+$results = db_query($sql, array(
+  ':type' => 'candidat',
+));
+
+foreach ($results as $result){
+  echo '<p>' . $result->nid . '</p>';
+  $node = node_load( $result->nid);
+
+  $node->field_first_name[LANGUAGE_NONE][0]['value']   = trim($node->field_first_name['und'][0]['value']);
+  $node->field_surname[LANGUAGE_NONE][0]['value']   = trim($node->field_surname['und'][0]['value']);
+
+  node_save($node);
+}
+
+?>
