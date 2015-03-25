@@ -1,0 +1,7 @@
+#!/bin/bash
+# Shell to get GeoIP db file
+current_dir=`pwd`
+cd /var/www/lexpress/sites/all/libraries/geoip
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+gzip -d GeoIP.dat.gz
+cd $current_dir
