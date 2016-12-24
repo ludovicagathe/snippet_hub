@@ -1,0 +1,11 @@
+echo "pre-push hook called"
+sudo rsync -a /var/www/meem/sites/default/files/* /home/ubuntu/files/
+echo "rsync on files directory"
+sudo rsync -a /home/ubuntu/files/ /home/ubuntu/meem.git/sites/default/files/
+echo "rsync to main repo"
+mysqldump -u root -pwebe2gether meem > /home/ubuntu/db_bkp/meem_prod.sql
+cp /home/ubuntu/db_bkp/meem_prod.sql /home/ubuntu/meem.git/
+sudo chown -R ubuntu:ubuntu /home/ubuntu/meem.git/sites/default/files/*
+echo "prod db dumped"
+echo "files directory commit"
+exit 0
