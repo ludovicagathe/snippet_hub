@@ -1,0 +1,88 @@
+# utils and apps
+-system monitoring
+  - top output (CPU load, memory)
+  - connectivity (latency)
+  - ssh access
+  - directory guard (changes)
+-kill switch (catastrophic event lockdown)
+
+-gui/multi-user switcher
+
+-Server setup
+[x] Install build and system packages
+[x] Install service packages
+[ ] Install security and utilities packages
+[ ] Configure services
+[x] Set up SSH
+[x] Configure Firewall
+  [x] Default: allow outgoing and enable incoming
+  [x] Deny ports 22, 8080, 3306, 3000, 5000
+  [x] Allow ports 25, 80, 443, 8022
+
+-EEIMS (local)
+[ ] Set up Apache
+  [x] Install Apache
+  [ ] Install mods
+	[x] PHP
+  [ ] Define sites and ports (vhosts)
+  [ ] Secure with UFW to allow remote access
+  [ ] Configure for Drupal
+  [ ] Configure for PHP
+  [ ] Configure for performance
+[ ] Set up Nginx as reverse proxy
+  [ ] Install Nginx
+  [ ] Set up HTTP Drupal site
+  [ ] Set up HTTPS Drupal site
+	[ ] Install Let's Encrypt
+	[ ] Configure Let's Encrypt
+  	[ ] Current local server SSL
+  	[ ] Auto-renew cerificate
+  [ ] ModSecurity
+	[ ] Install ModSecurity for Nginx
+	[ ] Download Ruleset Repo
+	[ ] Configure ModSecurity
+[ ] Set up PHP8.0
+  [ ] Install PHP8.0
+  [ ] Install extensions for Drupal
+  [ ] Enable required extensions
+  [ ] Configure PHP and extensions
+  [ ] Install Composer
+[ ] Set up MySQL
+  [ ] Install MySQL
+  [ ] Initial setup
+	[ ] Set root password
+	[ ] Run mysql_secure_installation # disable remote root login and others
+	[ ] Create databases
+	[ ] Create users
+	[ ] Grant privileges
+  [ ] Optimise for performance
+  [ ] Optimise for security
+[ ] Set up e-mail support
+[ ] Install Drupal
+[ ] Configure clients
+[ ] Optimise performance
+[ ] Optimise security
+  [ ] Install fail2ban #?
+[ ] Cron Scripts
+  [ ] Check for updates
+	[ ] Get list of updatable modules
+	[ ] Check for security updates
+	[ ] Notify
+  	[ ] mail
+  	[ ] SMS
+	[ ] After one week, if no intervention, install security updates and restart
+  [ ] Pull repos
+	[ ] ModSecurity Ruleset
+  	[ ] Pull
+  	[ ] Copy to directory
+	[ ] Composer
+ 	 
+  [ ] Custom updates
+  [ ] Server status
+  [ ] Check services are running
+	[ ] Check NetworkManager status
+	[ ] Check Apache
+	[ ] Check Nginx
+	[ ] Check Redis
+	[ ] Check MySQL
+

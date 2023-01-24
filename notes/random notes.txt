@@ -1,0 +1,665 @@
+
+mysqldump -h localhost -u [MySQL user, e.g. root] -p[database password] -c --add-drop-table --add-locks --all --quick --lock-tables [name of the database] > sqldump.sql
+
+Block position (needs attention):
+
+structure -> Context -> Select page (Edit) -> Blocks
+
+36470526
+
+Installing and confi
+
+create database drupal7;
+
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES ON drupal7.* TO 'ludz'@'localhost' IDENTIFIED BY 'xiphos1';
+
+mysql> GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES ON op3dev.* TO 'drupal'@'localhost' IDENTIFIED BY 'Canada2008';
+
+flush privileges;
+
+
+do dbase
+do vhost
+update hostfile
+copy drupal
+restart apache
+
+C:\Apache\httpd\htdocs\op3>mysql -uroot -hlocalhost -pxiphos1 lexpress < lexpress.sql
+
+
+470 x 230
+
+windows cpv 1281
+
+http://www.youtube.com/watch?v=Cfd9DOnuF9w
+
+766 5555
+collegue travail sans
+
+permission edit
+
+search unpublish
+
+shakeel
+ssl.sakeel@hotmail.com
+2597113
+
+1090 x 550
+
+19-05-13 - 21:40
+http://www.lexpress.mu/article/affaire-mitd-la-police-na-pas-eu-lautorisation-de-consulter-les-sms-dit-ramgoolam
+7
+
+http://www.lexpress.mu/article/video-retour-sur-laffaire-yatin-varma
+4
+
+http://www.lexpress.mu/article/affaire-mitd-vasant-bunwaree-veut-une-confrontation-avec-paul-berenger
+21
+
+http://www.lexpress.mu/article/patrick-assirvaden-repond-au-klr-simpliste-faux-et-dangereux
+4
+
+http://www.lexpress.mu/article/affaire-varma-un-etudiant-arrete-pour-avoir-envoye-un-faux-courriel
+3
+
+http://www.lexpress.mu/article/affaire-mitd-faits-troublants-temoignages-et-comportements-singuliers
+7
+
+http://www.lexpress.mu/article/le-mmm-msm-reclame-le-depart-de-plusieurs-ministres-dont-varma
+16
+
+http://www.lexpress.mu/article/un-malaise-ribot-au-mmm
+11
+
+22:12
+
+19-05-13 - 22:31
+http://www.lexpress.mu/article/un-policier-de-26-ans-tue-larme-blanche-son-epouse-arretee
+7
+
+http://www.lexpress.mu/article/pedophilie-alleguee-au-mitd-confessions-intimes
+17
+
+http://www.lexpress.mu/article/incident-varma-deux-temoins-sortent-de-lombre
+30
+
+http://www.lexpress.mu/article/agression-alleguee-yatin-varma-donne-sa-version-des-faits-la-police
+12
+
+http://www.lexpress.mu/article/affaire-varma-ramgoolam-encourage-les-personnes-temoigner
+18
+
+http://www.lexpress.mu/article/yatin-varma-d%C3%A9ment-avoir-agress%C3%A9-un-jeune-conducteur
+24
+
+
+
+23:37
+
+[12:35:20] *** Call to Joe Chin ***
+[12:39:44] Joe Chin: https://github.com/dmajkic/redis/downloads
+[12:42:26] Joe Chin: drush
+[12:43:35] Joe Chin: http://drupal.org/node/594744
+[12:49:07] Joe Chin: http://ruilopes.com/redis-setup
+
+
+bruno: 7516102
+
+
+1. contexts pour commentaires et articles
+2. broken links: /node/22xxxx/bla-bla-bla-bla
+3. Editorial 
+-> Taxonomy
+-> View
+-> Menu
+-> Homepage Block
+4. related articles not displayed
+5. Les plus lus block
+
+
+questions:
+
+how does git know who I am and where to look for?
+
+mysql grant privileges, username, user 
+ 
+ Etsy, Pinterest, You Are Not a Photographer blog, Awkward Family Photos, Damn You Autocorrect...
+
+ E21BF33B
+ 
+Joe:
+Git and EGit
+
+1. Git repository: holds all changes: on development server ->
+2. Take a snapshot and put on system
+3. How when making a change -> put back
+4. cd
+5. pwd
+6. ls -a
+7. cd -.ssh
+8. put .pem there
+9. create config file 
+  -> vi config
+  -> host main.dev.lexpress.mu
+  IdentityFile ~/.ssh/lasentinelle.pem
+  save: esc + :w + :q
+  
+9.5: less config
+9.8 cd .. and ping main.dev.lexpress.mu if necessary
+9.9. if permissions: ls -l -> chmod 600 config
+10. ssh git@main.dev.lexpress.mu
+11. git config --global user.name "ludo"
+  email
+
+git config --list
+5/2/13 11:18 AM
+cd c:\apache\httpd\htdocs
+5/2/13 11:20 AM
+git clone git@main.dev.lexpress.mu:/home/git/lasdev.git
+5/2/13 11:20 AM
+lasdev
+5/2/13 11:21 AM
+c:\apache\httpd\htdocs\lasdev
+5/2/13 11:27 AM
+<VirtualHost *:80>
+   ServerAdmin jchin@joeandjill.ca
+   DocumentRoot "C:/Apache/httpd/htdocs/lasdev"
+   ServerName classified
+   ErrorLog "logs/classified-error.log"
+   #CustomLog "logs/classified-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+   ServerAdmin jchin@joeandjill.ca
+   DocumentRoot "C:/Apache/httpd/htdocs/lasdev"
+   ServerName les50ans
+   ErrorLog "logs/les50ans-error.log"
+   #CustomLog "logs/les50ans-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+   ServerAdmin desktop@joeandjill.ca
+   DocumentRoot "C:/Apache/httpd/htdocs/lasdev"
+   ServerName lexpress
+   ErrorLog "logs/lexpress-error.log"
+   #CustomLog "logs/lexpress-access.log" common    
+</VirtualHost>
+5/2/13 11:27 AM
+httpd-vhosts.conf
+5/2/13 11:29 AM
+git clone....
+5/2/13 11:29 AM
+cd c:\apache\httpd\htdocs
+5/2/13 11:29 AM
+git clone...
+  
+15. Modify vhost.config
+
+
+// ********** Git etc *************
+ls -a
+.ssh
+cd .ssh
+known_hosts
+vi config
+less config
+ignore previous line
+  host main.dev.lexpress.mu
+  IdentityFile ~/.ssh/lasentinelle.pem
+:
+w
+q
+wq
+less configgit 
+ssh git@main.dev.lexpress.mu
+cd ..
+ping main.dev.lexpress.mu
+ls -l
+chmod 600 config
+chmod lasentinelle.pem
+
+
+Kritananda
+
+Les «6 vertus capitales», selon Philippe Forget: 
+l’effort  vigoureux 
+la qualité en toute circonstance
+les débats, échanges, idées nouvelles et l’innovation
+la discipline et la rigueur
+la productivité et l’élimination du gaspillage dans un engagement personnel pour se rendre responsable
+le travail d'équipe.
+
+
+afternet
+
+
+Cellule des applications numériques
+
+Administration de la présence web de l'express (site, réseaux sociaux)
+
+Développement d'applications in-house
+
+Mobile
+
+In house
+
+Idées 50 ans:
+
+Ils ont aussi 50 ans...
+Ca vous fait quoi d'avoir l'âge de l'express?
+25 ans: L'express a vécu deux fois plus qu'eux
+
+Personnification de l'express:
+moLexpress
+
+Les grandes périodes de l'express
+La construction d'une nation
+Les joutes médiatiques
+Les querelles politiques
+L'ère numérique
+
+Les noms de l'express
+Dr Philippe Forget
+Jean Claude de l'Estrac
+Les rédacteurs en chef
+
+Facebook: venez célébrer/vous amuser avec nous
+
+Concours: ce que j'ai aimé chez l'express
+Lecteur/employé
+
+1. 50 -> 75 to center tile
+
+2. div margins: 10-5-10-10, 10-10-10-5
+
+amazon livre forget
+
+bandeau rdv
+
+06-04-13 7h30-9h00
+
+dimension pov
+
+summary length
+
+twa to kapav danse, manze, bwar
+lisi parey li danse
+li dans lor santie ziska fer nwar
+lisi parey li manze
+de trwa ti bouse li ramass lor sime
+lisi li parey li bwar
+enn dilor lapli ki li kapav ramasse
+kan twa to engresse, li li enkesse
+kan to fami pe amize
+pou li pe mor toufe
+
+
+Tomber amoureux d'une photo
+les lignes suaves d'une belle sur une photo inattendue
+
+05/05/13 - 9h44
+http://www.lexpress.mu/node/228412 - Fair and Square
+15
+
+
+http://www.lexpress.mu/article/statistiques-en-sauce%E2%80%A6-l%E2%80%99express-toujours-le-quotidien-le-plus-lu
+8
+
+http://www.lexpress.mu/article/un-allemand-arr%C3%AAt%C3%A9-%C3%A0-l%E2%80%99a%C3%A9roport-avec-rs-20-m-d%E2%80%99h%C3%A9ro%C3%AFne
+4
+
+http://www.lexpress.mu/node/228413 - Edito Nad Etat Sentinelle
+3
+
+http://www.lexpress.mu/article/accident-de-sor%C3%A8ze-l%E2%80%99opposition-r%C3%A9clame-une-enqu%C3%AAte-impartiale
+15
+
+http://www.lexpress.mu/node/228435 - Varma
+5
+
+http://lexpress.mu/article/inondations-deux-cadres-de-general-constructions-interrog%C3%A9s
+11
+
+
+
+http://lexpress.mu/article/m%C3%A9t%C3%A9o%C2%A0-balraj-dunputh-fait-ses-valises
+56
+
+http://lexpress.mu/article/post-inondations-navin-ramgoolam-d%C3%A9nonce-des-cas-de-fraude-r%C3%A9pertori%C3%A9s-par-la-police
+16
+
+http://lexpress.mu/node/227229 - No honour
+3
+
+http://lexpress.mu/node/227178 - One tragedy, one nation
+9
+
+http://www.lexpress.mu/article/imelda-avertissement-de-cyclone-de-classe-1-%C3%A0-maurice-et-%C3%A0-rodrigues
+1
+
+http://www.lexpress.mu/article/ecole-de-m%C3%A9decine-louis-pasteur-les-activit%C3%A9s-bloqu%C3%A9es-en-attendant-une-d%C3%A9cision-de-la-tec
+5
+
+http://www.lexpress.mu/node/227499
+10
+
+http://www.lexpress.mu/node/227498
+15
+
+http://www.lexpress.mu/article/alan-ganoo-%C2%ABramgoolam-est-en-fin-de-r%C3%A8gne%C2%BB
+2
+
+http://www.lexpress.mu/article/le-mmm-r%C3%A9clame-%C3%A0-nouveau-la-d%C3%A9mission-d%E2%80%99anil-bachoo
+11
+
+http://www.lexpress.mu/article/%C2%ABfreedom-information-act%C2%BB-ramgoolam-h%C3%A9site
+25
+
+http://goo.gl/maps/CjaqB
+
+uniquecité
+
+netsh int ip reset "directory\file"
+
+netsh winsock reset
+
+Isombtussog
+Orgacrarmbymn
+
+Unpublished
+JEANNOT | 03/29/13
+Aster mo p attan quand pou arête Didieu PAPI de la compagnie POWER MASTER ENTREPRENEUR CORPERATIVE CREDIT UNION même type escroquerie!
+
+
+lexpress.mu:233 x 78
+lexp
+
+I-2PTFT5KU9W8M
+
+
+300 x 360
+
+
+0 0
+0 -120
+0 -240
+100 x 120
+
+/*if(document.getElementById(this.id).style.left != document.getElementById($(ui.draggable).attr('id')).style.left){
+			  document.getElementById(this.id).style.left = document.getElementById($(ui.draggable).attr('id')).style.left;
+		  }
+		  if(document.getElementById(this.id).style.top != document.getElementById($(ui.draggable).attr('id')).style.top){
+			  document.getElementById(this.id).style.top = document.getElementById($(ui.draggable).attr('id')).style.top;
+		  }*/conditions link on comments
+
+changed follow us links - fb and twitter no good
+
+keyword facebook posts
+
+L'actu des stars, c'est dans le Bollwood News de l'express
+Cette semaine, les "items songs" sont-elle trop sexy? Elles ne font, du moins, pas l'unanimité en matière de censure...
+La "Jolly LLB" Amrita Rao nous livre également ses confidences. Retrouvez-la, elle et ses amis de la constellation Bollywood, cette semaine dans l'express!
+
+
+mail
+
+tableaux classements pages foot
+
+text denis
+dwejen@gmail.com
+
+pics:
+Article
+470 x 250
+620 x 330
+
+search gives lexpress/results
+
+main image on gallery does not allow for caption in gallery
+
+Warning: file_get_contents(http://news-new.lexpress.mu/sites/lexpress/files/js/wysiwyg/wysiwyg_ckeditor_pTtjV9tEu-9ub-7ZNMhZEHzXAOJB6Tnk5dgwiSnfDHA.js): failed to open stream: HTTP request failed! HTTP/1.1 401 Authorization Required in _locale_parse_js_file() (line 1488 of /var/www/lasentinelle/includes/locale.inc).
+The file could not be uploaded.
+
+image pov: 432:250
+
+http://editing.lemauricien.com/article/afrobarometer-mauricianisme-les-30-l%E2%80%99espoir%E2%80%A6
+
+http://www.lexpress.mu/story/35676-le-mauricianisme-est-un-communalisme.html
+
+/printmail/26109
+
+2.98
+
+rules: redirect
+
+LIKE MAURICE
+
+ludovi_1354517686_per@gmail.com
+
+2123251 avinash dookhun 4214375
+
+youth -> not for sacrificial jobs
+
+Jeff Lingaya alain bertrand est certainement le plus naif et le moins pourri du trio jameel/avish/alain.
+jameel va bien sur capitaliser sur l'évènement pour faire sensation et nourrir sa crédibilité,à juste titre, défaillante.contrairement à lui, lors de la marche anti-communale du 10 mars 2012, et de la dernière arrestation concernant la loi du travail en decembre 2012, il nous faudra montrer de la solidarité pour la victime de cette sanction du 12 mars 2013. il faudra trouver une facon de le faire tout en échappant au système pourri de la récup machiavélique d'azir moris, qui est le miroir de la seconde nature de jameel, lui qui se pavanne sur la scène locale dans les medias avides de sensationel creux, en dessous sales. Ce dernier est aussi trèès mal placé pour venir se placer en tant que defenseur de la démocracie, entre autre. ce serait franchement une blague de mauvais gout.-
+Ceci dit. le fait qu'alain soit en détention, et qu'on lui refuse sa caution est Inacceptable. il est Urgent que l'on se mobilse contre l'injustice et pour défendre le Droit à l'Expréssion dans ce pays.-
+mais j'espère que nous n'allons pas non plus tout oublier de la nature des personnes concernées dans cette affaire, dans un élan de solidarité. ce serait reproduire la même connerie qui hante nos societés depuis des sciècles.
+
+GUILTY OR NOT GUILTY YOUR HONOUR
+
+newUnpublished
+keeza | 03/20/13
+- BE SI OU FINE ACHETER SA LA CAGE LA POU 30 MILLION LI VRAI
+- OUI VOTRE HONEUR
+**explique la cour LA CAGE LA TOUT COREK PENA PROBLEM SOUINTER COULEE ETC ETC
+-- TOUT BON YOUR HONOUR
+--- OU FINE FAIRE UN BON ZAFAIRE --- OUI OUI VOTRE HONEUR
+----EXPLIQUE LA COUR QUAND OU ACHETER UN LA CAGE 30 MILLION SE CASH PROFIT SA OU BIEN PRET LA BANQUE
+----- NON NON CASH PROFIT SA
+------ APPROXIMATIVEMENT QUI OU POURCENTAGE PROFIT... 25%
+.......BE QUI OU TURNOVER POU OU FINE FAIRE PROFIT 30 MILLION
+........ SA OU BISIN ALE DIMANDE MISIER MRA
+.......... ESKI MRA JAMAIN FINE VINE GUETTE OU
+............NO REPLY YOUR HONOUR
+............BAN BOUGUE QUI APEL VALUATION JAMAIN FINE VINE GUETTE OU
+NON VOTE HONOUR.
+MERCI
+
+Not found
+
+http://www.lexpress.mu/article/grave-accident-d%E2%80%99autobus-%C3%A0-sor%C3%A8ze-des-dizaines-de-victimes
+
+Good
+
+http://www.lexpress.mu/article/un-violent-accident-d%E2%80%99autobus-%C3%A0-sor%C3%A8ze-fait-plusieurs-morts-police-et-pompiers-sur-place
+
+
+http://www.youtube.com/watch?v=AVQhB9aNCK0
+
+http://www.youtube.com/watch?v=DfSL4KK4nzk
+
+Bonjour!
+
+Merci d'avoir participé au jeu Tritonik sur la page Facebook de 5 Plus!
+
+Nous avons le plaisir de vous annoncer que vous remportez deux billets pour le concert des Tritonik, qui se tiendra samedi, à Pointe-Canon, Mahebourg.
+
+Veuillez nous communiquer votre numéro de téléphone, afin que nous puissions vous contacter pour vous remettre les billets.
+
+Bravo!
+
+Félicitations!
+
+Vous avez gagné l'occasion de rencontrer les Tritonik lors de leur concert, qui se tiendra demain, grâce à 5 Plus. 
+
+Pour plus d'informations, veuillez me donner votre numéro de téléphone avant midi aujourd'hui. On vous contactera pour les modalités d'entrée.
+
+Bravo!
+
+stefan.atchia@gmail.com
+
+
+
++216 250 162 82
+
+
+
+SERVER NOTES
+
+Welcome to Git (version 1.8.1.2-preview20130201)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+lud'z@ADELL ~
+$ cd..
+sh.exe": cd..: command not found
+lud'z@ADELL ~
+$ cd ..
+lud'z@ADELL /c/Users
+$ ls -a
+.   All Users  Default User      Public       lud'z
+..  Default    MSSQL$SQLEXPRESS  desktop.ini
+lud'z@ADELL /c/Users
+$ cd lud\'z/
+lud'z@ADELL ~
+$ ls -a
+.
+..
+.android
+.bash_history
+.bdockinstall.log
+.gem
+.gitconfig
+.heroku
+.ssh
+AppData
+Application Data
+Contacts
+Cookies
+Desktop
+Documents
+Downloads
+Dropbox
+Favorites
+Links
+Local Settings
+Music
+My Documents
+NTUSER.DAT
+NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TM.blf
+NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000001
+.regtrans-ms
+NTUSER.DAT{6cced2f1-6e01-11de-8bed-001e0bcd1824}.TMContainer00000000000000000002
+.regtrans-ms
+NetHood
+Pictures
+PrintHood
+Recent
+Saved Games
+Searches
+SendTo
+Start Menu
+Templates
+Videos
+_netrc
+_viminfo
+android-sdks
+dwhelper
+fathomless-beach-8516
+mplayer
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+workspace
+lud'z@ADELL ~
+$ cd .
+./                 .bash_history      .gitconfig
+../                .bdockinstall.log  .heroku/
+.android/          .gem/              .ssh/
+lud'z@ADELL ~
+$ ssh git@main.dev.lexpress.mu
+Welcome to Ubuntu 11.10 (GNU/Linux 3.0.0-13-virtual i686)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Thu May  2 07:28:18 UTC 2013
+
+  System load:  0.0                 Processes:           92
+  Usage of /:   22.1% of 403.57GB   Users logged in:     1
+  Memory usage: 49%                 IP address for eth0: 10.238.21.253
+  Swap usage:   0%
+
+  Graph this data and manage this system at https://landscape.canonical.com/
+New release '12.04 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Get cloud support with Ubuntu Advantage Cloud Guest
+  http://www.ubuntu.com/business/services/cloud
+git@ip-10-238-21-253:~$ exit
+logout
+Connection to main.dev.lexpress.mu closed.
+lud'z@ADELL ~
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+pack.packsizelimit=2g
+help.format=html
+http.sslcainfo=/bin/curl-ca-bundle.crt
+sendemail.smtpserver=/bin/msmtp.exe
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+user.name=Ludovic
+user.email=ludovic.agathe@gmail.com
+gui.recentrepo=C:/Users/lud'z/fathomless-beach-8516
+lud'z@ADELL ~
+$ git clone git@main.lexpress.mu:/home/git/lasdev.git
+Cloning into 'lasdev'...
+ssh: main.lexpress.mu: no address associated with name
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+lud'z@ADELL ~
+$ git --list
+Unknown option: --list
+usage: git [--version] [--exec-path[=<path>]] [--html-path] [--man-path] [--info
+-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [-c name=value] [--help]
+           <command> [<args>]
+lud'z@ADELL ~
+$ git config -list
+error: did you mean `--list` (with two dashes ?)
+lud'z@ADELL ~
+$ cd ..
+lud'z@ADELL /c/Users
+$ cd..
+sh.exe": cd..: command not found
+lud'z@ADELL /c/Users
+$ cd ..
+lud'z@ADELL /c
+$ cd Apache/
+lud'z@ADELL /c/Apache
+$ cd httpd/
+lud'z@ADELL /c/Apache/httpd
+$ cd htdocs/
+lud'z@ADELL /c/Apache/httpd/htdocs
+$ git clone git@main.lexpress.mu:/home/git/lasdev.git
+Cloning into 'lasdev'...
+ssh: main.lexpress.mu: no address associated with name
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+lud'z@ADELL /c/Apache/httpd/htdocs
+$ git clone git@main.dev.lexpress.mu:/home/git/lasdev.git
+Cloning into 'lasdev'...
+remote: Counting objects: 8808, done.
+remote: Compressing objects: 100% (7643/7643), done.
+Receiving objects:   1% (116/8808), 524.00 KiB | 19 KiB/s
