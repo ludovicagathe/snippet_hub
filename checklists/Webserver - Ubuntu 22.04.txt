@@ -12,6 +12,9 @@
 [x] Install build and system packages
 [x] Install service packages
 [ ] Install security and utilities packages
+  [ ] Install ClamAV
+    [ ] Start ClamAV daemon
+    [ ] Start clamav-freshclam service to automatically download definitions
 [ ] Configure services
 [x] Set up SSH
 [x] Configure Firewall
@@ -35,8 +38,8 @@
   [ ] Set up HTTPS Drupal site
 	[ ] Install Let's Encrypt
 	[ ] Configure Let's Encrypt
-  	[ ] Current local server SSL
-  	[ ] Auto-renew cerificate
+	[ ] Current local server SSL
+	[ ] Auto-renew cerificate
   [ ] ModSecurity
 	[ ] Install ModSecurity for Nginx
 	[ ] Download Ruleset Repo
@@ -68,21 +71,22 @@
 	[ ] Get list of updatable modules
 	[ ] Check for security updates
 	[ ] Notify
-  	[ ] mail
-  	[ ] SMS
+	[ ] mail
+	[ ] SMS
 	[ ] After one week, if no intervention, install security updates and restart
   [ ] Pull repos
 	[ ] ModSecurity Ruleset
-  	[ ] Pull
-  	[ ] Copy to directory
+	[ ] Pull
+	[ ] Copy to directory
 	[ ] Composer
- 	 
+	 
   [ ] Custom updates
   [ ] Server status
-  [ ] Check services are running
-	[ ] Check NetworkManager status
-	[ ] Check Apache
-	[ ] Check Nginx
-	[ ] Check Redis
-	[ ] Check MySQL
+    [ ] Nginx status
+    [ ] Apache status
+    [ ] MySQL status
+    [ ] Redis status
+    [ ] NetworkManager status
+    [ ] ClamAV status
+    [ ] Freshclam status
 
